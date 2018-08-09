@@ -1,8 +1,3 @@
-name: Custom ROMs Development, By: Secretwolf98
-description: Custom ROMs Development, By: Secretwolf98
-repository: secretwolf98/secretwolf98.github.io
-url: http://secretwolf98.github.io
-baseurl: ""
 
 defaults:
   -
