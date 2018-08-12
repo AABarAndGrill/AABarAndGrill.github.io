@@ -5,20 +5,58 @@ title: Home
 
 <div class="jumbotron welcome">
 	<div class="container">
-		<h1 class="bold">A&A Bar & Grill</h1>
+		<h1 class="bold">Custom ROMs Development,<br />By: Secretwolf98</h1>
+		<p>Find all important information about latest changes in the latest ROMs updates on the "<a href="http://secretwolf98.github.io/news.html">news page</a>". If you find a bug on my GitHub webpage, feel free to help us fix it. :) You can do so at, <a href="https://github.com/secretwolf98/secretwolf98.github.io">you can find the sources here</a>.</p>
+		<a href="https://androidfilehost.com/?w=profile&uid=889964283620764442" class="btn btn-primary"><i class="material-icons">open_in_new</i> To all Downloads</a>
+		<a href="https://github.com/secretwolf98" class="btn btn-white"><i class="material-icons">account_circle</i> My Github Profile</a>
 	</div>
 </div>
 
+<div class="alert alert-primary">
+	<div class="container">
+		<div class="alert-icon">
+			<i class="material-icons">warning</i>
+		</div>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true"><i class="material-icons">clear</i></span>
+		</button>
+		<b>Warning!</b>
+		I am not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed.
+		Please do some research if you have any concerns about features included in these ROMs and/or Recoveries before flashing it!
+		YOU are choosing to make these modifications, and if you point the finger at me for messing up your device, I will laugh at you.
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-7">
+			<h2><i class="fa fa-newspaper-o fa-fw" aria-hidden="true"></i> Latest Updates:</h2>
+			<hr />
+			{% for news in site.data.news limit:2 %}
+			<div class="card">
+				<div class="card-body">
+					<h3 class="card-title">{{ news.date | date_to_long_string }}</h3>
+					<hr class="light">
+					{{ news.content | markdownify }}
+				</div>
+			</div>
 			{% endfor %}
 
-			<h2><i class="fa fa-download fa-fw" aria-hidden="true"></i> To all places:</h2>
+			<a href="news.html" class="btn btn-primary">All News</a>
+
+		</div>
+		<hr class="w-100 d-sm-block d-md-none mb-4">
+		<div class="col-md-5">
+
+			<h2><i class="fa fa-download fa-fw" aria-hidden="true"></i> All downloads:</h2>
 			<hr />
 
 			<div class="card">
 				
 				<div class="card">
 				<div class="card-body">
-					<h3 class="card-title">About us</h3>
+					<h3 class="card-title">Discord</h3>
 					<hr class="light">
 					<div class="list-group">
 						<h6 class="list-group-item disabled">
@@ -32,10 +70,66 @@ title: Home
 			</div>
 
 				<div class="card-body">
-					<h3 class="card-title">Faq</h3>
+					<h3 class="card-title">Samsung Galaxy Tab 4 7.0" Wifi</h3>
 					<hr class="light">
 					<div class="list-group">
 						<h6 class="list-group-item disabled">
+							All ROMs:
+						</h6>
+						<a class="list-group-item list-group-item-action" href="roms_tab4.html">
+							All current ROMs
+						</a>
+					</div>
+					<br>
+					<div class="list-group">
+						<h6 class="list-group-item disabled">
+							Extras:
+						</h6>
+						<a class="list-group-item list-group-item-action" href="recoveries_tab4.html">
+							Recommened Recoveries
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="card-title">Nook HD</h3>
+					<hr class="light">
+					<div class="list-group">
+						<h6 class="list-group-item disabled">
+							All ROMs:
+						</h6>
+						<a href="roms_hummingbird_cm.html" class="list-group-item list-group-item-action">
+							CyanogenMod
+						</a>
+						<a href="roms_hummingbird_lineage.html" class="list-group-item list-group-item-action">
+							LineageOS
+						</a>
+            <a href="stock_hummingbird.html" class="list-group-item list-group-item-action">
+							Stock NookOS
+						</a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="card">
+				<div class="card-body">
+					<h3 class="card-title">Nook HD+</h3>
+					<hr class="light">
+					<div class="list-group">
+						<h6 class="list-group-item disabled">
+							All ROMs:
+						</h6>
+						<a href="roms_ovation_cm.html" class="list-group-item list-group-item-action">
+							CyanogenMod
+						</a>
+						<a href="roms_ovation_lineage.html" class="list-group-item list-group-item-action">
+							LineageOS
+						</a>
+						<a href="stock_ovation.html" class="list-group-item list-group-item-action">
+							Stock NookOS
+						</a>
 					</div>
 				</div>
 			</div>
